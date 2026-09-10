@@ -1,7 +1,7 @@
 pipeline {
     agent any
 
-    // No webhook required — poll GitHub for new commits every 5 minutes instead
+    // No webhook required — poll GitHub for new commits every minute instead
     triggers {
         pollSCM('* * * * *')
     }
